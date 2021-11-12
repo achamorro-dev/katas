@@ -40,4 +40,10 @@ describe('fizz-buzz.spec', () => {
       'fizzbuzz'
     ])
   })
+
+  it('should throw an Error when start index is less than 1', function () {
+    const given = 0
+
+    expect(() => fizzBuzz(given)).toThrowError()
+  })
 })
