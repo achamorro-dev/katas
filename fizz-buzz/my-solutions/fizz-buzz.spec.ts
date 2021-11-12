@@ -16,4 +16,12 @@ describe('fizz-buzz.spec', () => {
 
     expect(result).toEqual([1, 2, 'fizz'])
   })
+
+  it('should return a list with items 1,2,fizz,4,buzz when start index is 5', () => {
+    const given = 5
+
+    const result = fizzBuzz(given)
+
+    expect(result).toEqual([1, 2, 'fizz', 4, 'buzz'])
+  })
 })

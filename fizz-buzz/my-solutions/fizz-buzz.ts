@@ -8,6 +8,10 @@ export function fizzBuzz(startAt: number): Array<number | string> {
       item = 'fizz'
     }
 
+    if (i % 5 === 0) {
+      item = 'buzz'
+    }
+
     result.push(item)
   }
 
